@@ -1,9 +1,10 @@
 <?php
+require 'scraperwiki.php';
 
 require 'scraperwiki/simple_html_dom.php';
 
 //scraperwiki::attach("craigslist_cities"); //Attach the craigslist city scraper
-//print_r(scraperwiki::select("* from craigslist_cities.swdata WHERE state = 'Alabama'"));
+//print_r(scraperwiki::select("* from craigslist_cities.data WHERE state = 'Alabama'"));
 
 scraperwiki::attach('synthfilter_utils');
 $manufacturers = scraperwiki::get_var('manufacturers');
